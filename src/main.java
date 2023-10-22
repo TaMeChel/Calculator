@@ -1,24 +1,22 @@
 import java.util.Scanner;
 
 public class main {
-    public static void main (String args []){
+    public static void main (String [] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.print ("Введите первое число: ");
+        System.out.print ("Введите первое число");
         int x = scanner.nextInt();
-        System.out.print ("Введите второе число: ");
+        System.out.print ("Введите второе число");
         int y = scanner.nextInt();
-        System.out.printf ("Результат сложения: ");
-        int rez1 = x + y;
-        System.out.println (rez1);
-        System.out.printf ("Результат вычитания: ");
-        int rez2 = x - y;
-        System.out.println (rez2);
-        System.out.printf ("Результат умножения: ");
-        int rez3 = x * y;
-        System.out.println (rez3);
-        System.out.printf ("Результат деления: ");
-        int rez4 = x / y;
-        System.out.println (rez4);
+        System.out.println ("Каждой операции соответствует цифра: 1=+, 2=-, 3=*, 4=/. Введите нужную цифру");
+        int z = scanner.nextInt();
+        if (z == 1){
+            System.out.println(x + y);
+        }else if (z == 2){
+            System.out.println(x - y);
+        }else if (z == 3){
+            System.out.println(x * y);
+        }else
+            System.out.println(x / y);
         scanner.close();
     }
 }
